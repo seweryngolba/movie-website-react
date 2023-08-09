@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoSide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: red;
+  font-weight: 900;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.mobileNav {
+  position: fixed;
+  background: red;
+  right: 0;
+  top: 60px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.listItem {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobileMenu i {
+  color: red;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.mobileMenu .close {
+  display: none;
+}
