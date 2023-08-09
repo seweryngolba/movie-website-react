@@ -52,3 +52,32 @@
 .mobileMenu .close {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 70px;
+  }
+
+  .logoSide {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .mobileNav {
+    position: static;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background: transparent;
+    gap: 30px;
+  }
+  .listItem {
+    color: red;
+    font-size: 18px;
+  }
+}
