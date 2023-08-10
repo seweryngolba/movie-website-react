@@ -1,0 +1,16 @@
+.movieInput {
+  width: 280px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid red;
+  background: transparent;
+  margin-bottom: 20px;
+  color: red;
+  outline: none;
+  transition: border 0.3s ease-in;
+}
+
+.movieInput::placeholder {
+  color: red;
+}
