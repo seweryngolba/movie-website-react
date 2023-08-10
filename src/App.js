@@ -1,7 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import Homepage from "./pages/Homepage/Homepage";
+import RandomMovie from "./pages/PopularMovies/PopularMovies";
 
 function App() {
   return (
@@ -9,13 +10,11 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route index element={<Hero />} />
+          <Route index element={<Homepage />} />
           <Route path="movie/:id" element={<h1>Movie Detail Page</h1>} />
           <Route path="movies/:type" element={<h1>Movies list page</h1>} />
-          <Route
-            path="movies/:random_movie"
-            element={<h1>Random Movie page</h1>}
-          />
+          <Route path="movies/popular" element={<RandomMovie />} />
+          <Route path="movies/random_movie" element={<RandomMovie />} />
           <Route path="/*" element={<h1>Error</h1>} />
         </Routes>
       </Router>
