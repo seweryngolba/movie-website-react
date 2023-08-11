@@ -6,6 +6,7 @@ import Favorites from "../../components/Favorites/Favorites";
 
 const PopularMovies = () => {
   const [movies, setMovies] = useState([]);
+  const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState("lord of the rings");
 
   const getMovie = async (searchValue) => {
@@ -22,12 +23,29 @@ const PopularMovies = () => {
     getMovie(searchValue);
   }, [searchValue]);
 
+  const saveToLocalStorage = (items) => {
+    localStorage.setItem(
+      "react-movie-website-favourites",
+      JSON.stringify(items)
+    );
+  };
+
+  const addFavouriteMovie = (movie) => {
+    const newFavouriteList = [...favourites, movie];
+    setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
+  };
+
   return (
     <div className="movieContainer">
       <h2 className="popularTitle">POPULAR MOVIES</h2>
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       <div className="moviePosters">
-        <MovieList movies={movies} favouriteComponent={Favorites} />
+        <MovieList
+          movies={movies}
+          handleFavourites={addFavouriteMovie}
+          favouriteComponent={Favorites}
+        />
       </div>
     </div>
   );

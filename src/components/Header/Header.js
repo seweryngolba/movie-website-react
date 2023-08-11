@@ -31,8 +31,8 @@ const Header = () => {
           <Link className="listItem" to="/movies/popular">
             POPULAR
           </Link>
-          <Link className="listItem" to="/movies/upcoming">
-            UPCOMING
+          <Link className="listItem" to="/movies/my_favourites">
+            FAVOURITES
           </Link>
           <Link className="listItem" to="/movies/random_movie">
             RANDOM MOVIE
