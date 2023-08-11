@@ -1,4 +1,34 @@
 .moviePhoto {
-  width: 240px;
-  height: 360px;
+  width: 220px;
+  height: 340px;
+  padding: 10px;
+}
+
+.imageContainer {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.posterOverlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.imageContainer:hover .posterOverlay {
+  opacity: 1;
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./PopularMovies.css";
 import MovieList from "../../components/MovieList/MovieList";
 import SearchBox from "../../components/SearchBox/SearchBox";
+import Favorites from "../../components/Favorites/Favorites";
 
 const PopularMovies = () => {
   const [movies, setMovies] = useState([]);
@@ -26,7 +27,7 @@ const PopularMovies = () => {
       <h2 className="popularTitle">POPULAR MOVIES</h2>
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       <div className="moviePosters">
-        <MovieList movies={movies} />
+        <MovieList movies={movies} favouriteComponent={Favorites} />
       </div>
     </div>
   );
