@@ -21,6 +21,7 @@ const PopularMovies = () => {
 
   useEffect(() => {
     getMovie(searchValue);
+    console.log(searchValue);
   }, [searchValue]);
 
   const saveToLocalStorage = (items) => {
