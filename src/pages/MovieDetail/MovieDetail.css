@@ -1,0 +1,155 @@
+.movieDetails {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.detailTitle {
+  font-size: 14px;
+  width: 200px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.backgroundPoster {
+  position: relative;
+  padding-top: 50px;
+  width: 320px;
+  height: 10px;
+}
+
+.detailPhoto {
+  width: 320px;
+  height: 120px;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.detailPoster {
+  margin-top: 20px;
+  width: 90px;
+  height: 140px;
+  z-index: 2;
+}
+
+.titleSection {
+  margin: 30px 0 0 20px;
+  width: 310px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.movieRating {
+  position: absolute;
+  top: 64px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gold;
+  margin-left: 8px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.detailSubtitle {
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.basicDetails {
+  display: flex;
+}
+
+.detailYear,
+.detailRuntime {
+  font-size: 12px;
+  padding-left: 10px;
+  opacity: 0.7;
+}
+
+.detailPlot {
+  font-size: 12px;
+  width: 200px;
+  margin-left: 8px;
+}
+
+.allDetails {
+  list-style: none;
+}
+
+.allDetails li {
+  padding-top: 10px;
+  width: 280px;
+}
+
+@media screen and (min-width: 375px) {
+  .backgroundPoster {
+    width: 375px;
+  }
+
+  .detailPhoto {
+    width: 375px;
+    height: 120px;
+  }
+
+  .movieRating {
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .backgroundPoster {
+    width: 425px;
+  }
+
+  .detailPhoto {
+    width: 425px;
+    height: 120px;
+  }
+
+  .movieRating {
+    width: 40px;
+    height: 40px;
+    top: 70px;
+    right: 15px;
+    font-size: 16px;
+  }
+
+  .detailPoster {
+    width: 140px;
+    height: 200px;
+  }
+  .titleSection {
+    margin: 30px 0 0 0;
+    width: 400px;
+  }
+
+  .detailTitle {
+    font-size: 18px;
+    width: 280px;
+  }
+  .detailYear,
+  .detailRuntime {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .detailPlot {
+    font-size: 14px;
+    width: 220px;
+  }
+
+  .allDetails {
+    margin-top: 10px;
+  }
+
+  .allDetails li {
+    padding-top: 10px;
+    width: 400px;
+  }
+}

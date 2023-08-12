@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./MovieSlider.css";
+import { Link } from "react-router-dom";
 
 const MovieSlider = (props) => {
   let settings = {
@@ -63,7 +64,13 @@ const MovieSlider = (props) => {
       <Slider {...settings}>
         {props.data.map((movie) => (
           <div className="moviesSlides">
-            <img className="sliderPoster" src={movie.Poster} alt="movie"></img>
+            <Link to={`/movie/${movie.imdbID}`}>
+              <img
+                className="sliderPoster"
+                src={movie.Poster}
+                alt="movie"
+              ></img>
+            </Link>
           </div>
         ))}
       </Slider>

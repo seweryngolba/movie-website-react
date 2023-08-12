@@ -1,16 +1,10 @@
 import "./FavouriteMovies.css";
 import MovieList from "../../components/MovieList/MovieList";
-import Favorites from "../../components/Favorites/Favorites";
 import { useEffect, useState } from "react";
 import RemoveFavourites from "../../components/RemoveFavourites/RemoveFavourites";
 
 const FavouriteMovies = () => {
   const [favourites, setFavourites] = useState([]);
-
-  //   const addFavouriteMovie = (movie) => {
-  //     const newFavouriteList = [...favourites, movie];
-  //     setFavourites(newFavouriteList);
-  //   };
 
   useEffect(() => {
     const movieFavourites = JSON.parse(
@@ -35,7 +29,7 @@ const FavouriteMovies = () => {
   };
   return (
     <div className="favContainer">
-      <h2 className="favTitle">YOUR FAVOURITES</h2>
+      <h2 className="favTitle">YOUR FAVOURITES MOVIES</h2>
       <div className="moviePosters">
         <MovieList
           movies={favourites}

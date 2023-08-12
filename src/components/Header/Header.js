@@ -25,11 +25,8 @@ const Header = () => {
           MOVIES
         </Link>
         <div id="mobileNav" className="mobileNav">
-          <Link className="listItem" to="/movies/top_rated">
-            TOP RATED
-          </Link>
           <Link className="listItem" to="/movies/popular">
-            POPULAR
+            ALL MOVIES
           </Link>
           <Link className="listItem" to="/movies/my_favourites">
             FAVOURITES

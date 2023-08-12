@@ -29,3 +29,17 @@ video {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 64px;
+    width: 780px;
+  }
+}
