@@ -2,10 +2,9 @@ import "./Favorites.css";
 
 const Favorites = () => {
   return (
-    <>
-      <span className="addTitle">Add to Favorites</span>
+    <div className="addFav">
       <i className="fa-solid fa-heart heartIcon"></i>
-    </>
+    </div>
   );
 };
 

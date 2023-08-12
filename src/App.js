@@ -20,7 +20,7 @@ function App() {
             path="movies/random_movie"
             element={<h1>Random Movie page</h1>}
           />
-          <Route path="/*" element={<h1>Error</h1>} />
+          <Route path="/*" element={<h1>PAGE NOT FOUND</h1>} />
         </Routes>
       </Router>
     </div>

@@ -6,17 +6,17 @@ const MovieList = (props) => {
   return (
     <>
       {props.movies.map((movie, index) => (
-        <Link key={movie.imdbID} to={`/movie/${movie.imdbID}`}>
-          <div className="imageContainer" key={movie.imdbID}>
+        <div className="imageContainer" key={movie.imdbID}>
+          <Link key={movie.imdbID} to={`/movie/${movie.imdbID}`}>
             <img className="moviePhoto" src={movie.Poster} alt="movie"></img>
-            <div
-              onClick={() => props.handleFavourites(movie)}
-              className="posterOverlay"
-            >
-              <FavouriteComponent />
-            </div>
+          </Link>
+          <div
+            onClick={() => props.handleFavourites(movie)}
+            className="posterOverlay"
+          >
+            <FavouriteComponent />
           </div>
-        </Link>
+        </div>
       ))}
     </>
   );
