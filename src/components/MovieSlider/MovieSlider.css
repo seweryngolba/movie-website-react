@@ -1,3 +1,7 @@
+.sliderContainer {
+  margin: 0 auto;
+}
+
 .sliderTitle {
   padding: 20px 0 10px 10px;
   font-size: 36px;
@@ -11,7 +15,7 @@
 
 .sliderPoster {
   width: 220px;
-  height: 300px;
+  height: 320px;
 }
 
 .moviesSlides:hover {
