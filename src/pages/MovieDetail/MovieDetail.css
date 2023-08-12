@@ -16,12 +16,12 @@
 .backgroundPoster {
   position: relative;
   padding-top: 50px;
-  width: 320px;
+  width: 100%;
   height: 10px;
 }
 
 .detailPhoto {
-  width: 320px;
+  width: 100%;
   height: 120px;
   object-fit: cover;
   opacity: 0.4;
@@ -52,6 +52,9 @@
   align-items: center;
   justify-content: center;
   border: 2px solid gold;
+  background: gold;
+  color: black;
+  font-weight: 900;
   margin-left: 8px;
   font-size: 12px;
   z-index: 2;
@@ -89,50 +92,29 @@
 }
 
 @media screen and (min-width: 375px) {
-  .backgroundPoster {
-    width: 375px;
+  .movieRating {
+    width: 32px;
+    height: 32px;
+    top: 70px;
+    right: 10px;
+    font-size: 16px;
+  }
+  .detailPoster {
+    width: 120px;
+    height: 180px;
   }
 
-  .detailPhoto {
-    width: 375px;
-    height: 120px;
+  .titleSection {
+    margin: 30px 0 0 0;
+    width: 350px;
+  }
+  .detailTitle {
+    font-size: 18px;
+    width: 240px;
   }
 
   .movieRating {
     right: 10px;
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .backgroundPoster {
-    width: 425px;
-  }
-
-  .detailPhoto {
-    width: 425px;
-    height: 120px;
-  }
-
-  .movieRating {
-    width: 40px;
-    height: 40px;
-    top: 70px;
-    right: 15px;
-    font-size: 16px;
-  }
-
-  .detailPoster {
-    width: 140px;
-    height: 200px;
-  }
-  .titleSection {
-    margin: 30px 0 0 0;
-    width: 400px;
-  }
-
-  .detailTitle {
-    font-size: 18px;
-    width: 280px;
   }
   .detailYear,
   .detailRuntime {
@@ -141,15 +123,125 @@
   }
   .detailPlot {
     font-size: 14px;
-    width: 220px;
+    width: 230px;
   }
-
   .allDetails {
     margin-top: 10px;
   }
+  .allDetails li {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .detailPoster {
+    width: 140px;
+    height: 200px;
+  }
+  .titleSection {
+    width: 400px;
+  }
+
+  .detailTitle {
+    font-size: 18px;
+    width: 280px;
+  }
 
   .allDetails li {
-    padding-top: 10px;
     width: 400px;
+  }
+  .detailPlot {
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .detailPoster {
+    width: 180px;
+    height: 260px;
+  }
+
+  .detailPhoto {
+    height: 180px;
+  }
+
+  .titleSection {
+    width: 740px;
+    align-items: center;
+  }
+  .detailTitle {
+    font-size: 32px;
+    width: 550px;
+  }
+  .detailYear,
+  .detailRuntime {
+    font-size: 18px;
+  }
+  .detailPlot {
+    padding-top: 40px;
+    font-size: 18px;
+    width: 520px;
+  }
+  .movieRating {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .allDetails li {
+    width: 720px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .detailPoster {
+    width: 210px;
+    height: 320px;
+  }
+  .detailPhoto {
+    height: 220px;
+  }
+  .titleSection {
+    width: 980px;
+    align-items: flex-start;
+  }
+  .detailTitle {
+    font-size: 44px;
+    width: 760px;
+  }
+  .detailYear,
+  .detailRuntime {
+    font-size: 24px;
+  }
+  .detailPlot {
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    width: 760px;
+  }
+  .movieRating {
+    width: 48px;
+    height: 48px;
+    top: 80px;
+    right: 15px;
+    font-size: 24px;
+  }
+  .allDetails li {
+    width: 980px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .movieRating {
+    top: 80px;
+    right: 480px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .movieRating {
+    top: 80px;
+    right: 780px;
   }
 }
