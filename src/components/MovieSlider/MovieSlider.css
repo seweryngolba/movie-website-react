@@ -1,16 +1,19 @@
 .sliderContainer {
   margin: 0 auto;
+  width: 310px;
+  padding-bottom: 30px;
 }
 
 .sliderTitle {
   padding: 20px 0 10px 10px;
   font-size: 36px;
   color: white;
+  text-align: center;
 }
 
 .moviesSlides {
   transition: transform 0.3s ease;
-  padding: 10px;
+  padding: 20px;
 }
 
 .sliderPoster {
@@ -20,6 +23,15 @@
 
 .moviesSlides:hover {
   transform: scale(1.1);
+}
+
+.slick-slide > div {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 0 14px;
+  margin-left: 8px;
 }
 
 .slick-prev,
@@ -32,11 +44,47 @@
 }
 
 .slick-next {
-  margin-right: 40px;
+  margin-right: 48px;
 }
 
 .slick-prev:before,
 .slick-next:before {
   font-size: 32px;
   color: red !important;
+}
+
+@media screen and (min-width: 768px) {
+  .sliderContainer {
+    width: 740px;
+  }
+  .slick-slide > div {
+    margin-left: -12px;
+  }
+  .slick-next {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sliderContainer {
+    width: 980px;
+  }
+  .slick-slide > div {
+    margin-left: -12px;
+  }
+  .slick-next {
+    margin-right: 28px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sliderContainer {
+    width: 1400px;
+  }
+  .slick-slide > div {
+    margin-left: -20px;
+  }
+  .slick-next {
+    margin-right: 28px;
+  }
 }
