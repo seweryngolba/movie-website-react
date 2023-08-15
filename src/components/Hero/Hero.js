@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero">
       <video src={video} autoPlay loop muted />
       <div className="heroContent">
-        <h1 className="title">DISCOVER THE BEST FILMS ONLINE</h1>
+        <h1 className="title">DISCOVER THE BEST MOVIES ONLINE</h1>
       </div>
     </div>
   );
