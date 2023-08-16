@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route index element={<Homepage />} />
+          <Route path="/movie-website-react" element={<Homepage />} />
           <Route path="movie/:imdbID" element={<MovieDetail />} />
           <Route path="movies/popular" element={<PopularMovies />} />
           <Route path="movies/my_favourites" element={<FavouriteMovies />} />
