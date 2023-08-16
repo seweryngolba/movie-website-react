@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/movie-website-react/static/css/main.6e7fd108.css",
-    "main.js": "/movie-website-react/static/js/main.8d68e771.js",
+    "main.css": "/movie-website-react/static/css/main.14f86355.css",
+    "main.js": "/movie-website-react/static/js/main.2820e486.js",
     "static/media/movie.mp4": "/movie-website-react/static/media/movie.90e42f7f7e6e6018c205.mp4",
     "static/media/slick.svg": "/movie-website-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/movie-website-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/movie-website-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/movie-website-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/movie-website-react/index.html",
-    "main.6e7fd108.css.map": "/movie-website-react/static/css/main.6e7fd108.css.map",
-    "main.8d68e771.js.map": "/movie-website-react/static/js/main.8d68e771.js.map"
+    "main.14f86355.css.map": "/movie-website-react/static/css/main.14f86355.css.map",
+    "main.2820e486.js.map": "/movie-website-react/static/js/main.2820e486.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e7fd108.css",
-    "static/js/main.8d68e771.js"
+    "static/css/main.14f86355.css",
+    "static/js/main.2820e486.js"
   ]
 }
