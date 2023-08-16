@@ -10,7 +10,7 @@ const PopularMovies = () => {
   const [searchValue, setSearchValue] = useState("lord of the rings");
 
   const getMovie = async (searchValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=bef75a8e`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=bef75a8e`;
     const response = await fetch(url);
     const responseJson = await response.json();
 
