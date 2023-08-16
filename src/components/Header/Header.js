@@ -21,7 +21,10 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logoSide">
-        <Link className="logo" to="/movie-website-react">
+        <Link
+          className="logo"
+          to="https://seweryngolba.github.io/movie-website-react/"
+        >
           MOVIES
         </Link>
         <div id="mobileNav" className="mobileNav">
