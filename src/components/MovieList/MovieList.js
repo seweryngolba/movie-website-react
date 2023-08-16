@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 const MovieList = (props) => {
   const FavouriteComponent = props.favouriteComponent;
+
+  if (!props.movies || !Array.isArray(props.movies)) {
+    return <p className="infoMovie">Add some movies to your favourites</p>;
+  }
   return (
     <>
       {props.movies.map((movie, index) => (

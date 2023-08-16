@@ -35,3 +35,7 @@
 .imageContainer:hover .posterOverlay {
   opacity: 1;
 }
+
+.infoMovie {
+  color: white;
+}
