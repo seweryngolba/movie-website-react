@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logoSide">
-        <Link className="logo" to="/">
+        <Link className="logo" to="/movie-website-react">
           MOVIES
         </Link>
         <div id="mobileNav" className="mobileNav">
