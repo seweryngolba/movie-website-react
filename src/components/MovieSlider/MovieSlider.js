@@ -63,7 +63,7 @@ const MovieSlider = (props) => {
       <h2 className="sliderTitle">{props.title}</h2>
       <Slider {...settings}>
         {props.data.map((movie) => (
-          <div className="moviesSlides">
+          <div key={movie.imdbID} className="moviesSlides">
             <Link to={`/movie/${movie.imdbID}`}>
               <img
                 className="sliderPoster"
