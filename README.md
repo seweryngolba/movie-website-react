@@ -2,6 +2,10 @@
 
 This website allows users to explore a collection of movies, view their details, and manage their favorite movies.
 
+## Used API
+
+The Movie Website utilizes the OMDb API (Open Movie Database API) to fetch movie information and data. The OMDb API provides access to a vast collection of movie details, including titles, plots, genres, release dates, ratings, and more. It's a great resource for building applications that involve movie data.
+
 ## Table of Contents
 
 - [Features](#features)
@@ -22,3 +26,5 @@ This website allows users to explore a collection of movies, view their details,
 - React Router: A routing library for handling navigation within the app.
 - CSS: Used for styling and layout.
 - JavaScript: The primary programming language used.
+- react-slick: A carousel/slider component for React applications.
+- Font Awesome Icons: A library of customizable icons for web projects.
